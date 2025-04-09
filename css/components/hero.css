@@ -1,0 +1,232 @@
+.hero{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./../../assets/hero_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    font-family: var(--ff-poppins);
+}
+
+.hbtm__img{
+    width: 392px;
+    height: auto;
+    position: absolute;
+    bottom: -200px;
+    left: 2rem;
+    user-select: none;
+    pointer-events: none;
+}
+
+header{
+    width: 100%;
+}
+
+#mobile__menu, #close__menu{
+    display: none;
+}
+
+nav{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.logo__selector .nav__logo{
+    width: 126px;
+    height: auto;
+    pointer-events: none;
+}
+
+.nav__list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__list li a{
+    position: relative;
+    font-size: 16px;
+    font-weight: var(--fw-500);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    transition: all 0.3s ease;
+
+    & span{
+        font-size: 20px;
+    }
+}
+
+.nr__btn button, .submit__btn, .view_package{
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background: var(--main-color);
+    font-size: 17px;
+    font-weight: var(--fw-500);
+    color: var(--white);
+    transition: background 0.3s ease;
+
+    &:hover{
+        background: var(--main-d-color);
+    }
+}
+
+.hero__content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--white);
+}
+
+.h_shape{
+    width: 80px;
+    height: auto;
+}
+
+.hero__content h1{
+    font-size: 58px;
+    font-weight: var(--fw-700);
+    line-height: 1.2;
+}
+
+.booking__form{
+    display: inline-block;
+    padding: 1.2rem 1.5rem;
+    background: rgba(254, 254, 254, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    margin: 2rem 0;
+}
+
+.booking__form a{
+    padding: 0.5rem 2rem;
+    border-right: 1.5px solid #fff;
+    font-size: 18px;
+    font-weight: var(--fw-400);
+    color: var(--white);
+
+    &:nth-child(1){
+        padding-left: 0;
+    }
+
+    &:nth-child(3){
+        border-right: none;
+    }
+}
+
+.submit__btn{
+    width: 176px;
+}
+
+.booked{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & span{
+        font-size: 13px;
+        font-weight: var(--fw-400);
+        color: var(--white);
+    }
+}
+
+.booked__people{
+    width: 180px;
+    height: auto;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 768px){
+    .nav__list {
+        position: fixed;
+        top: 0;
+        left: -70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 70%;
+        min-height: 100vh;
+        background: var(--main-color);
+        padding: 5rem 2rem;
+        z-index: 2222;
+        overflow: hidden;
+        transition: left 0.3s ease;
+    }
+
+    #mobile__menu, #close__menu{
+        display: initial;
+        font-size: 20px;
+        color: var(--white);
+    }
+
+    .close__menu{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .opennav{
+        left: 0;
+    }
+
+    .hero__content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero__content h1 {
+        font-size: 40px;
+    }
+
+    .booking__form {
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .booking__form a {
+        border-right: none;
+    }
+
+    .booked {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+}
+
+
+/* 480px */
+@media only screen and (max-width: 480px){
+    .nr__btn button, .submit__btn, .view_package {
+        padding: 0.5rem 1rem;
+        font-size: 12px;
+    }
+
+    .logo__selector .nav__logo {
+        width: 80px;
+    }
+
+    .hero__content h1 {
+        font-size: 30px;
+    }
+
+    .booking__form a {
+        font-size: 14px;
+    }
+}

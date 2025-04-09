@@ -1,0 +1,84 @@
+.explore__pkgs{
+    width: 100%;
+    margin: 5rem 0;
+    display: flex;
+}
+
+.explore__pkgs__left, .explore__pkgs__right{
+    position: relative;
+    width: 50%;
+    min-height: 400px;
+    padding: 1rem;
+    text-align: center;
+    color: var(--white);
+    /* background: red; */
+    background-image: url("./../../assets/explore__nature.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.explore__pkgs__right{
+    background-image: url("./../../assets/explor__cities.png");
+}
+
+.expkgs__content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.5;
+
+    & .promotion__title{
+        font-size: 18px;
+        font-weight: var(--fw-500);
+    }
+
+    & h4{
+        font-size: 50px;
+        font-weight: var(--fw-700);
+        margin-bottom: 1rem;
+
+        & .hd__title__line__text{
+            position: relative;
+        }
+    }
+}
+
+.explore__text__line{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transform: translateX(-0%);
+}
+
+.expkgs__content button{
+    border: 1px solid var(--white);
+    background: transparent;
+    color: var(--white);
+}
+
+
+/* responsive */
+@media only screen and (max-width: 768px){
+    .explore__pkgs {
+        flex-direction: column;
+    }
+
+    .explore__pkgs__left, .explore__pkgs__right {
+        width: 100%;
+    }
+}
+
+
+/* 480 */
+@media only screen and (max-width: 480px){
+    .explore__text__line {
+        width: 120px;
+    }
+
+    .expkgs__content h4{
+        font-size: 40px;
+    }
+}

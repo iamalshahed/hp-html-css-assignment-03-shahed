@@ -1,0 +1,124 @@
+.testimonial{
+    position: relative;
+    width: 100%;
+    min-height: 770px;
+    background-image: url("./../../assets/testimonial_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonial__content .heading{
+    margin-top: 6rem;
+}
+
+.tst__blc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.testimonial__content{
+    max-width: 640px;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.testimonial__box{
+    position: relative;
+    max-width: 540px;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    background: var(--white);
+    border-radius: 17px;
+    margin-top: 6rem;
+    font-family: var(--ff-poppins);
+}
+
+.people__img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tst__para{
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    font-weight: var(--fw-400);
+    color: var(--black);
+    line-height: 2;
+
+    & .txtbg__icon{
+        position: relative;
+    }
+}
+
+.tst__bg{
+    position: absolute;
+    top: -27px;
+    left: -22px;
+}
+
+.designer__name{
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 14px;
+}
+
+.tst__arrow__left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.tst__arrow__right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.img__circle{
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #737373;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover{
+        background: #585858;
+    }
+}
+
+.tst__arrows{
+    width: auto;
+    height: auto;
+}
+
+/* responsive */
+@media only screen and (max-width: 480px){
+    .testimonial__box {
+        max-width: 85%;
+        padding: 2rem 1rem;
+    }
+
+    .img__circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tst__arrows {
+        width: 15px;
+        height: auto;
+    }
+}

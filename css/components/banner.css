@@ -1,0 +1,54 @@
+.banner{
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    background-image: url("./../../assets/next_holiday.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0;
+    margin-top: 5rem;
+}
+
+.banner__content{
+    max-width: 640px;
+    position: absolute;
+    top: 50%;
+    /* left: 0; */
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-weight: var(--fw-700);
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.banner__content span{
+    position: relative;
+}
+
+.amazing__spahe{
+    position: absolute;
+    bottom: -36px;
+    left: 0;
+    transform: translateX(-0%);
+}
+
+
+/* responsive */
+@media only screen and (max-width: 768px){
+    .banner__content {
+        max-width: 100%;
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .banner__content {
+        font-size: 30px;
+    }
+
+    .amazing__spahe {
+        width: 170px;
+    }
+}

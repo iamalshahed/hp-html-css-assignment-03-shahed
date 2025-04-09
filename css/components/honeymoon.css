@@ -1,0 +1,61 @@
+.honeymoon{
+    width: 100%;
+    padding: 3rem 0 5rem 0;
+}
+
+.honeymoon__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 8rem; */
+}
+
+.honeymoon_img{
+    width: 40%;
+
+    & img{
+        width: 100%;
+    }
+}
+
+.honeymoon__content{
+    width: 50%;
+
+    & .heading{
+        width: 100%;
+    }
+}
+
+.honeymoon__content p{
+    font-size: 16px;
+    font-weight: var(--fw-400);
+    font-family: var(--ff-poppins);
+    margin: 1rem 0 2rem 0;
+}
+
+/* responsive */
+@media only screen and (max-width: 768px){
+    .honeymoon__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .honeymoon_img {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .honeymoon__content {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* 480 */
+@media only screen and (max-width: 480px){
+    .honeymoon_img {
+        width: 80%;
+    }
+}

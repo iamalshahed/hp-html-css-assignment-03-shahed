@@ -1,0 +1,28 @@
+.brand{
+    width: 100%;
+    padding: 5rem 0;
+    background-color: #F7F7F7;
+}
+
+.brand__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & img{
+        width: 120px;
+        height: auto;
+    }
+}
+
+
+/* responsive */
+@media only screen and (max-width: 768px){
+    .brand__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+}

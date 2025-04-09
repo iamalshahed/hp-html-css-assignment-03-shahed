@@ -1,0 +1,140 @@
+/* --------------------------- *\
+ * #Google Fonts 
+\* --------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* --------------------------- *\
+ * #Import other css components
+\* --------------------------- */
+@import url("./components/hero.css");
+@import url("./components/brand.css");
+@import url("./components/category.css");
+@import url("./components/honeymoon.css");
+@import url("./components/fast__easy.css");
+@import url("./components/prmotion.css");
+@import url("./components/banner.css");
+@import url("./components/explore__pkgs.css");
+@import url("./components/trendy.css");
+@import url("./components/testimonial.css");
+@import url("./components/footer.css");
+
+/* --------------------------- *\
+ * #Root
+\* --------------------------- */
+
+:root {
+  --main-color: #df6951;
+  --main-d-color: #ee4e2e;
+  --second-color: #181e4b;
+  --gray: #84829a;
+  --d-gray: #737373;
+  --black: #080809;
+  --white: #ffffff;
+  --yellow: #ffba0a;
+
+  /** 
+    * typography 
+    */
+  --ff-poppins: "Poppins", sans-serif;
+  --ff-volkhov: "Volkhov", serif;
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  --bxsdow: 0px 1.85px 3.15px 0px #00000001, 0px 8.15px 6.52px 0px #00000002,
+    0px 20px 13px 0px #00000003, 0px 38.52px 25.48px 0px #00000003,
+    0px 64.81px 46.85px 0px #00000004, 0px 100px 80px 0px #00000005;
+  --bxsdow-two: 0px 1.85px 3.15px 0px #00000001, 0px 8.15px 6.52px 0px #00000002,
+    0px 20px 13px 0px #00000003, 0px 38.52px 25.48px 0px #00000003,
+    0px 64.81px 46.85px 0px #00000004, 0px 100px 80px 0px #00000005;
+}
+
+/* --------------------------- *\
+ * #Global
+\* --------------------------- */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+::selection {
+  background: rgb(238, 78, 46, 0.9);
+  color: var(--white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  font-family: var(--ff-volkhov);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--ff-poppins);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heading {
+  margin-bottom: 2rem;
+
+  span {
+    font-family: var(--ff-poppins);
+    font-size: 18px;
+    font-weight: var(--fw-400);
+    color: var(--main-color);
+  }
+
+  h2 {
+    font-size: 50px;
+    font-weight: var(--fw-700);
+    color: var(--second-color);
+  }
+}
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+  .heading {
+    & h2 {
+      font-size: 25px;
+    }
+  }
+}
+
+/* 480 */
+@media only screen and (max-width: 480px) {
+  .heading {
+    text-align: center;
+    
+    & span {
+      font-size: 14px;
+    }
+  }
+}

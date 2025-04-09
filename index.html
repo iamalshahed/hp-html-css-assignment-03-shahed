@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel - HTML CSS Assignment 03</title>
+    <!--  
+    --- Favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
+
+    <!--  
+    --- link custom css file
+    -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  
+    --- Remixicons
+    -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+
+    <!-- 
+    --- #HERO 
+    -->
+    <section class="hero">
+        <div class="hero__container container">
+
+            <!-- hbtm__img -->
+            <img src="./assets/hero_btm_lft_img.png" alt="Circle" class="hbtm__img">
+
+            <!-- header -->
+            <header>
+                <nav>
+
+                    <div id="mobile__menu">
+                        <i class="ri-menu-2-fill"></i>
+                    </div>
+                    <!-- logo -->
+                    <a href="/" class="logo__selector">
+                        <img src="./assets/logo.svg" alt="Logo" class="nav__logo">
+                    </a>
+
+                    <ul class="nav__list" id="nav__list">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Services <span><i class="ri-arrow-down-s-fill"></i></span></a>
+                        </li>
+
+                        <li>
+                            <a href="#">Upcomming Packages</a>
+                        </li>
+
+                        <li class="close__menu" id="close__menu">
+                            <i class="ri-close-fill"></i>
+                        </li>
+                    </ul>
+
+                    <div class="nr__btn">
+                        <button type="button">Get in Touch</button>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="hero__content">
+                <img src="./assets/hero_head_shape.png" alt="Shape" class="h_shape">
+
+                <h1>No matter where <br> you’re going to, we’ll <br> take you there</h1>
+
+                <div class="booking__form">
+                    <a href="#">Where to?</a>
+                    <a href="#">Travel Type <span><i class="ri-arrow-down-s-line"></i></span></a>
+                    <a href="#">Duration <span><i class="ri-arrow-down-s-line"></i></span></a>
+
+                    <button type="submit" class="submit__btn">Submit</button>
+                </div>
+
+                <div class="booked">
+                    <img src="./assets/booked_people.png" alt="Booked People" class="booked__people">
+                    <span>2,500 people booked Tommorowland Event in last 24 hours</span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- 
+    --- #BRAND 
+    -->
+    <section class="brand">
+        <div class="brand__container container">
+            <img src="./assets/brands/b1.svg" alt="Brand" class="brands__logo">
+            <img src="./assets/brands/b2.svg" alt="Brand" class="brands__logo">
+            <img src="./assets/brands/b3.svg" alt="Brand" class="brands__logo">
+            <img src="./assets/brands/b4.svg" alt="Brand" class="brands__logo">
+            <img src="./assets/brands/b5.svg" alt="Brand" class="brands__logo">
+        </div>
+    </section>
+
+
+    <!-- 
+    --- #CATEGORY 
+    -->
+    <section class="category">
+        <div class="heading">
+            <span>CATEGORY</span>
+            <h2>We Offer Best Services</h2>
+        </div>
+
+        <div class="category__grid container">
+            <div class="category__item">
+                <div class="cti__content">
+                    <img src="./assets/category/c1.svg" alt="Category" class="category_card_img">
+                    <strong>Guided Tours</strong>
+                    <p>sunt qui repellat saepe quo velit aperiam id aliquam placeat.</p>
+                </div>
+                <img src="./assets/rectangle.png" alt="Image" class="ctbg__overlay">
+            </div>
+            <div class="category__item">
+                <div class="cti__content">
+                    <img src="./assets/category/c2.svg" alt="Category" class="category_card_img">
+                    <strong>Best Flights Options</strong>
+                    <p>sunt qui repellat saepe quo velit aperiam id aliquam placeat.</p>
+                </div>
+                <img src="./assets/rectangle.png" alt="Image" class="ctbg__overlay">
+            </div>
+            <div class="category__item">
+                <div class="cti__content">
+                    <img src="./assets/category/c3.svg" alt="Category" class="category_card_img">
+                    <strong>Religious Tours</strong>
+                    <p>sunt qui repellat saepe quo velit aperiam id aliquam placeat.</p>
+                </div>
+                <img src="./assets/rectangle.png" alt="Image" class="ctbg__overlay">
+            </div>
+            <div class="category__item">
+                <div class="cti__content">
+                    <img src="./assets/category/c4.svg" alt="Category" class="category_card_img">
+                    <strong>Medical insurance</strong>
+                    <p>sunt qui repellat saepe quo velit aperiam id aliquam placeat.</p>
+                </div>
+                <img src="./assets/rectangle.png" alt="Image" class="ctbg__overlay">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 
+    --- #HONEYMOON 
+    -->
+    <section class="honeymoon">
+        <div class="honeymoon__container container">
+            <div class="honeymoon_img">
+                <img src="./assets/honeymoon.png" alt="honeymoon" class="honeymoon_image">
+            </div>
+
+            <div class="honeymoon__content">
+                <div class="heading">
+                    <span>Honeymoon Specials</span>
+                    <h2>Our Romantic Tropical Destinations</h2>
+                    <p>Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus illum aut optio quibusdam!</p>
+                    <button type="submit" class="view_package">View Packages</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 
+    --- #FAST Easy 
+    -->
+    <section class="fast__easy">
+        <div class="fast__easy__container container">
+            <div class="fe__left">
+                <div class="heading">
+                    <span>Fast & Easy</span>
+                    <h2>Get Your Favourite Resort Bookings</h2>
+                </div>
+
+                <div class="rules">
+                    <div class="rules__wrapper">
+                        <img src="./assets/icons/rectangle.svg" alt="icon" class="rules__icon">
+                        <div class="rules_text">
+                            <strong>Choose Destination</strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        </div>
+                    </div>
+                    <div class="rules__wrapper">
+                        <img src="./assets/icons/water-sport.svg" alt="icon" class="rules__icon second_bg">
+                        <div class="rules_text">
+                            <strong>Check Availability</strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        </div>
+                    </div>
+                    <div class="rules__wrapper">
+                        <img src="./assets/icons/taxi.svg" alt="icon" class="rules__icon third_bg">
+                        <div class="rules_text">
+                            <strong>Let’s Go</strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fe__right">
+                <div class="fe__right__container">
+                    <img src="./assets/aeroplane.svg" alt="aeroplane" class="plain">
+                    <img src="./assets/background_element.png" alt="element" class="bg__element">
+                    <div class="trip__card">
+                        <img src="./assets/trip.png" alt="banner" class="tripcard__img">
+                        <div class="trip__to">
+                            <span>Trip to Hawaii </span>
+                            <p>14-29 June | by JR Martinax</p>
+                        </div>
+
+                        <div class="cta__icon">
+                            <span><i class="ri-leaf-fill"></i></span>
+                            <span><i class="ri-map-2-line"></i></span>
+                            <span><i class="ri-send-plane-fill"></i></span>
+                        </div>
+
+                        <div class="intrstng__client">
+                            <div class="building">
+                                <img src="./assets/icons/building.svg" alt="Icon" class="building__icon">
+                                <p>60 people are interested</p>
+                            </div>
+                            <span><i class="ri-heart-line"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="ongoing">
+                        <div class="ongoing__trip">
+                            <img src="./assets/trip_rome.png" alt="Image" class="ongoing__img">
+                            <div class="ongoing__title">
+                                <div class="first__title">
+                                    <span>Ongoing</span>
+                                    <p>Trip to rome</p>
+                                </div>
+
+                                <div class="ongoing__persentage">
+                                    <p><span>40%</span> completed</p>
+                                    <div class="percent__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 
+    --- #Banner 
+    -->
+    <section class="banner">
+        <div class="banner__container container">
+            <div class="banner__content">
+                <h3>Let’s make your next holiday <span>amazing <img src="./assets/icons/line.svg" alt="line" class="amazing__spahe"></span></h3>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 
+    --- #PROMOTION 
+    -->
+    <section class="promotion">
+        <div class="prmotion__container container">
+                <div class="heading promotion__heading">
+                    <span>Promotion</span>
+                    <h2>We Provide You Best Europe Sightseeing Tours</h2>
+
+                    <p>Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus illum aut optio quibusdam!</p>
+
+                    <button type="submit" class="view_package">View Packages</button>
+                </div>
+                <div class="ifel__tower">
+                    <img src="./assets/promotion/background.png" alt="Image" class="ifel__tower__img">
+                </div>
+
+                <div class="destination">
+                    <div class="destination__content">
+                        <img src="./assets/promotion/p1.png" alt="Destination">
+                        <span>$700</span>
+                    </div>
+                    <div class="destination__content">
+                        <img src="./assets/promotion/p2.png" alt="Destination">
+                        <span>$700</span>
+                    </div>
+                    <div class="destination__content">
+                        <img src="./assets/promotion/p3.png" alt="Destination">
+                        <span>$700</span>
+                    </div>
+                    <div class="destination__content">
+                        <img src="./assets/promotion/p4.png" alt="Destination">
+                        <span>$700</span>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+    <!-- 
+    --- #PROMOTION TWO 
+    -->
+    <section class="explore__pkgs">
+        <div class="explore__pkgs__left">
+            <div class="expkgs__content">
+                <span class="promotion__title">Promotion</span>
+                <h4>Explore <span class="hd__title__line__text">Nature <img src="./assets/icons/line_2.svg" alt="" class="explore__text__line"></span></h4>
+                <button type="submit" class="view_package">View Packages</button>
+            </div>
+        </div>
+
+        <div class="explore__pkgs__right">
+            <div class="expkgs__content">
+                <span class="promotion__title">Promotion</span>
+                <h4>Explore <span class="hd__title__line__text">Cities <img src="./assets/icons/line3.svg" alt="" class="explore__text__line"></span></h4>
+                <button type="submit" class="view_package">View Packages</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 
+    --- #TRENDY 
+    -->
+    <section class="trendy">
+        <div class="container">
+
+            <div class="heading">
+                <span>Trendy</span>
+                <h2>Our Trending Tour <br> Packages</h2>
+            </div>
+
+            <div class="trendy__card__wrapper">
+                <div class="trendy_card_item">
+                    <div class="trndy__posn">
+                        <img src="./assets/tranding/card_1.png" alt="Trendy" class="trdy__img">
+                        <img src="./assets/tranding/switzerland.png" alt="Flag" class="trndy__flag">
+                    </div>
+
+                    <div class="td__user">
+                        <div class="td__item">
+                            <img src="./assets/icons/calender.svg" alt="icon" class="tduser__icon">
+                            <span>8 days</span>
+                        </div>
+                        <div class="td__item">
+                            <img src="./assets/icons/user_placeholder.svg" alt="icon" class="tduser__icon">
+                            <span>25 People going</span>
+                        </div>
+                    </div>
+
+                    <div class="td_head">
+                        <strong class="country__name">Switzerland</strong>
+                        <div class="stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                    </div>
+
+                    <span class="location">
+                        <img src="./assets/icons/location.svg" alt="icon" class="location__icon">
+                        <span>Europe</span>
+                    </span>
+
+                    <div class="td__ammount">
+                        <span class="current__price">1,000 $</span>
+                        <span class="old__price"><del>1,200 $</del></span>
+                    </div>
+
+                    <div class="td__para">
+                        <p>
+                            Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos.
+                        </p>
+                    </div>
+
+                    <div class="td__card__btn">
+                        <button type="submit" class="view_package">Explore Now</button>
+                    </div>
+                </div>
+
+                <div class="trendy_card_item">
+                    <div class="trndy__posn">
+                        <img src="./assets/tranding/card_2.png" alt="Trendy" class="trdy__img">
+                        <img src="./assets/tranding/brazil.png" alt="Flag" class="trndy__flag">
+                    </div>
+
+                    <div class="td__user">
+                        <div class="td__item">
+                            <img src="./assets/icons/calender.svg" alt="icon" class="tduser__icon">
+                            <span>8 days</span>
+                        </div>
+                        <div class="td__item">
+                            <img src="./assets/icons/user_placeholder.svg" alt="icon" class="tduser__icon">
+                            <span>30 People going</span>
+                        </div>
+                    </div>
+
+                    <div class="td_head">
+                        <strong class="country__name">Amazon</strong>
+                        <div class="stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                    </div>
+
+                    <span class="location">
+                        <img src="./assets/icons/location.svg" alt="icon" class="location__icon">
+                        <span>Brazil</span>
+                    </span>
+
+                    <div class="td__ammount">
+                        <span class="current__price">1,223 $</span>
+                        <span class="old__price"><del>1,200 $</del></span>
+                    </div>
+
+                    <div class="td__para">
+                        <p>
+                            Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos.
+                        </p>
+                    </div>
+
+                    <div class="td__card__btn">
+                        <button type="submit" class="view_package">Explore Now</button>
+                    </div>
+                </div>
+
+                <div class="trendy_card_item">
+                    <div class="trndy__posn">
+                        <img src="./assets/tranding/card_3.png" alt="Trendy" class="trdy__img">
+                        <img src="./assets/tranding/giza.png" alt="Flag" class="trndy__flag">
+                    </div>
+
+                    <div class="td__user">
+                        <div class="td__item">
+                            <img src="./assets/icons/calender.svg" alt="icon" class="tduser__icon">
+                            <span>8 days</span>
+                        </div>
+                        <div class="td__item">
+                            <img src="./assets/icons/user_placeholder.svg" alt="icon" class="tduser__icon">
+                            <span>155 People going</span>
+                        </div>
+                    </div>
+
+                    <div class="td_head">
+                        <strong class="country__name">Switzerland</strong>
+                        <div class="stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                    </div>
+
+                    <span class="location">
+                        <img src="./assets/icons/location.svg" alt="icon" class="location__icon">
+                        <span>Egypt</span>
+                    </span>
+
+                    <div class="td__ammount">
+                        <span class="current__price">1,200 $</span>
+                        <span class="old__price"><del>1,200 $</del></span>
+                    </div>
+
+                    <div class="td__para">
+                        <p>
+                            Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos.
+                        </p>
+                    </div>
+
+                    <div class="td__card__btn">
+                        <button type="submit" class="view_package">Explore Now</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 
+    --- #TESTIMoNIAL 
+    -->
+    <section class="testimonial">
+        <img src="./assets/testimonial_bg_2.png" alt="Image" class="tst__blc">
+
+        <div class="testimonial__content">
+            <div class="heading">
+                <span>Promotion</span>
+                <h2>See What Our Clients Say About Us</h2>
+            </div>
+
+            <div class="testimonial__box">
+                <img src="./assets/testimonial_person.png" alt="People" class="people__img">
+                <p class="tst__para">
+                    <span class="txtbg__icon">
+                        Vel officiis 
+                        <img src="./assets/testimonial_text_bg.png" alt="icon" class="tst__bg">
+                    </span> 
+                    dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis.
+                </p>
+
+                <strong class="designer__name">Christine Beckam - Designer</strong>
+
+                <div class="tst__arrow__left img__circle">
+                    <img src="./assets/icons/arrow__left.svg" alt="icon" class="tst__arrows">
+                </div>
+                <div class="tst__arrow__right img__circle">
+                    <img src="./assets/icons/arrow__right.png" alt="icon" class="tst__arrows">
+                </div>
+            </div>
+            <div class="progress__line"></div>
+        </div>
+    </section>
+
+
+    <!-- 
+    --- #FOOTER 
+    -->
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__about">
+                    <img src="./assets/logo_footer.svg" alt="Logo" class="footer__logo">
+                    <div class="about__text">
+                        <p>Travel helps companies manage payments easily.</p>
+                    </div>
+                    <div class="socila__links">
+                        <a href="#">
+                            <img src="./assets/icons/social/linkedin.svg" alt="Social" class="social__logo">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/icons/social/messenger.svg" alt="Social" class="social__logo">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/icons/social/twitter.svg" alt="Social" class="social__logo">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/icons/social/twoo.svg" alt="Social" class="social__logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <span>Company</span>
+                    <ul>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <span>Destinations</span>
+                    <ul>
+                        <li>
+                            <a href="#">Maldives</a>
+                        </li>
+                        <li>
+                            <a href="#">Los Angelas</a>
+                        </li>
+                        <li>
+                            <a href="#">Las Vegas</a>
+                        </li>
+                        <li>
+                            <a href="#">Torronto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <span>Join Our Newsletter</span>
+                    <form action="#">
+                        <input type="text" placeholder="Your email address" required>
+                        <button type="submit" class="newslatter__btn">Subscribe</button>
+                        <p style="max-width: 320px; margin-top: 1rem; font-size: 16px; font-weight: var(--fw-400); color: #757095;">
+                            *  Will send you weekly updates for your better tour packages.
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <hr class="foot__hr">
+            <div class="copywrite">
+                <span class="copywrite__text">Copyright @ Xpro 2022. All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- link js file -->
+    <script type="module" src="./js/script.js"></script>
+    
+</body>
+</html>
